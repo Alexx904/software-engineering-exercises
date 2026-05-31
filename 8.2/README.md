@@ -26,7 +26,7 @@ Questa è un'applicazione web sviluppata in **Node.js** ed **Express** che mostr
 L'architettura del codice è rigorosamente separata per responsabilità:
 
 \`\`\`text
-esercizio-universita/
+8.2/
 ├── controllers/
 │   └── courseController.js   # Logica di business: elabora le richieste e invia i dati alle viste
 ├── models/
@@ -49,7 +49,7 @@ Per eseguire questo progetto sul tuo computer locale, devi avere installato:
 1.  **Clona o scarica** questa repository sul tuo computer.
 2.  Apri il terminale e naviga all'interno della cartella del progetto:
     \`\`\`bash
-    cd esercizio-universita
+    cd 8.2
     \`\`\`
 3.  **Installa le dipendenze** necessarie leggendo il file \`package.json\`:
     \`\`\`bash

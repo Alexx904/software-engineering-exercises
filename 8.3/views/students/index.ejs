@@ -1,0 +1,12 @@
+<h1>Elenco Studenti Iscritti</h1>
+<ul>
+    <% students.forEach(student => { %>
+        <li>
+            <%= student.firstName %> <%= student.lastName %> - Matr: <%= student.matricola %>
+            
+            <% if (student.enrolledCourse) { %>
+                | Iscritto a: <%= student.enrolledCourse.name %>
+            <% } %>
+        </li>
+    <% }) %>
+</ul>

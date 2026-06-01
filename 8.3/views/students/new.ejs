@@ -1,0 +1,15 @@
+<h1>Registra un nuovo Studente</h1>
+
+<form action="/students/create" method="POST">
+    <input type="text" name="firstName" placeholder="Nome" required>
+    <input type="text" name="lastName" placeholder="Cognome" required>
+    <input type="text" name="matricola" placeholder="Matricola" required>
+
+    <select name="courseId" required>
+        <% courses.forEach(course => { %>
+            <option value="<%= course._id %>"><%= course.name %></option>
+        <% }) %>
+    </select>
+
+    <button type="submit">Salva Studente</button>
+</form>

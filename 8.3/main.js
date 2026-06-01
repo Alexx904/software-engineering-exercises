@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // 2. Connessione al Database MongoDB tramite Mongoose
-mongoose.connect("mongodb://localhost:27017/university_db", {useNewUrlParser: true});
+mongoose.connect("mongodb://localhost:27017/university_db");
 const db = mongoose.connection;
 db.once("open", () => { 
     console.log("Connesso a MongoDB con successo!"); 

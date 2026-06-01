@@ -23,7 +23,6 @@ module.exports = {
                 // Generiamo la pagina HTML 'index.ejs' che si trova nella cartella 'students'.
                 res.render("students/index");
             })
-            // Se c'è un errore nella ricerca, lo passiamo al sistema.
             .catch(error => next(error));
     },
 
@@ -39,9 +38,7 @@ module.exports = {
                 res.locals.courses = courses;
                 // Solo ORA che abbiamo i corsi pronti, diciamo a Express di mostrare il form 'new.ejs'.
                 res.render("students/new");
-            // Chiude il blocco di successo
             })
-            // Se fallisce il recupero dei corsi, lancia l'errore.
             .catch(error => next(error));
     },
 
